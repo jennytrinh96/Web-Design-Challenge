@@ -1,0 +1,48 @@
+**7 Pages total**
+
+Landing page - index: 
+
+* Explanation of project
+* Links to each visual page
+	** Needs to have sidebar with previews of each plot
+	** Clicking the image should take user to that visual page for that plot
+
+
+Visualizations Pages (4 - one page for each plot)
+
+** Descriptive title and heading tag
+** The plot image
+** A paragraph describing the plot and its significance
+
+Comparisons Page
+
+** Contains all of the visuals on the same page for easy comparisons
+** Use a Bootstrap grid for the visuals
+	** Grid must be 2 visuals across medium and large screens
+	** Grid must be 1 visual on extra small or small screens
+
+Data Page
+
+** Displays a responsive table containing the data used in the visuals
+** Table must be a Bootstrap table component 
+	** https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables
+** Data must come from exporting the .csv file as HTML or convert to HTML
+	**https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html
+
+---------------------------------------------------------------------------------------------------
+Requirements: 
+
+Navigation menu:
+	** Must have a Nav menu at the top of every page
+	** Name of the site on the left of nav bar - allows user to return to landing page from anywhere
+	** Contain a drop down menu on the right of nav bar named Plots - provides links to each individual visual page
+		** Provide 2 or more text links: Comparisons and Data that links to these pages
+	**Should be responsive (use media queries)
+	** Nav bar must be similar to screenshot (background color changes..?)
+
+
+Submit links to the deployed app and GitHub repo to portal
+Ensure regular commits and a descriptive README.md file
+
+
+	
