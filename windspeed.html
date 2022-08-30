@@ -6,9 +6,11 @@
     
     <!-- Place style links here and bootstrap code-->
     
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     
-    
-    
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen">
+
+    <link rel="stylesheet" href= "assets/css/styles.css">
     <!---------------------------->  
   </head>
 
@@ -16,61 +18,114 @@
 
   
   <body>
-  <!--Place pages here, primaryNav-->
-    <ul>
-      <li>
-        <a href="landing.html">Home Page</a> 
-      </li>
+<!-- Start of NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href= "index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
 
-      <li>
-        <a href="maxtemp.html">X vs. Max Temperature</a> 
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="comparisons.html">Comparisons
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="datatable.html">Data Table</a>
+        </li>
 
-      <li>
-        <a href="humidity.html">X vs. Humidity</a> 
-      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+            <span class="visually-hidden">(current)</span>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a> -->
+          </div>
+        </li>
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<!--------------------------------->
+</br>
+</br>
+</br>  
+</br>
 
-      <li>
-        <a href="cloudiness.html">X vs. Cloudiness</a> 
-      </li>
+    <div class = 'container'>
 
-      <li>
-        <a href="windspeed.html">X vs. Wind Speed</a> 
-      </li>
+      <div class = 'row'>
+        <div class = 'col-12'>
+          <h1>vs. Wind Speed</h1>
+        </div>
+      </div>
 
-      <li>
-        <a href="comparisons.html">Plot Comparisons</a> 
-      </li>
-
-      <li>
-        <a href="datatable.html">Data Table</a> 
-      </li>
-
-
-
+      
+      <div class = 'row'>
+        <div class = "col-8">
+    
+        <a href= "windspeed.html"> 
+        <!-- <a creates a clickable image, anchoring a hypertext ref onto the image-->
+        <!-- title creates a tag when user hovers mouse over image-->
+        <img src="assets/images/Fig4.png" title= "Latitude vs. Wind Speed" alt= "Wind Speed" width= "800" height= "500"></a>
 
 
+        <p>In this data plot of Latitude vs. Wind Speed, as one travels north of 40 degrees latitude it is expected to experience high wind speed of 25+ mph. These outlying cities with high wind speed may be located in northern areas such as Europe, Russia, or Canada. There are a greater amount of cities north of the equator that experience an average of 5 mph wind speed at this time of year compared to a lesser number of cities south of the equator.</p>
+        </div>
 
 
-    </ul>
-  <!--------------------------------->
-  
+      <!--Plot and description end-->
+    
+    
+        <div class = "col-md-4">
+    
+        <center>
+        <h2>Visualizations</h2>
+                
+                
+        <a href= "maxtemp.html"> 
+        <!-- <a creates a clickable image, anchoring a hypertext ref onto the image-->
+        <!-- title creates a tag when user hovers mouse over image-->
+        <img src="assets/images/Fig1.png" title= "Latitude vs. Max Temp" alt= "Max Temp" width= "300" height= "200"></a>
+    
+        <a href= "humidity.html"> 
+        <img src="assets/images/Fig2.png" title= "Latitude vs. Humidity" alt= "Humidity" width= "300" height= "200"></a>
+    
+        
+        <a href= "cloudiness.html"> 
+        <img src="assets/images/Fig3.png" title= "Latitude vs. Cloudiness" alt= "Cloudiness" width= "300" height= "200"></a>
+    
+        <a href= "windspeed.html"> 
+        <img src="assets/images/Fig4.png" title= "Latitude vs. Wind Speed" alt= "Wind Speed" width= "300" height= "200"></a>
+      </center>   
+        </div>
+      </div>
 
 
-  <!-- Place dropdown list here, secondaryNav-->
 
-
-
-
-  <p>Welcome to my site!</p>
-
-
-
-
+    </div>
+    
 
   <!--Place bootstrap codes here:-->
 
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 
