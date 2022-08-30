@@ -12,11 +12,26 @@
     
     
     <!---------------------------->  
+
+        <!--Internal Styling-->
+        <style>
+          /* body{
+            background-color:lightslategray;
+            background-size: 100% 100%; 
+            } */
+    
+            body{
+              background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+        </style>
+    
+        <!-------Internal Styling End-------> 
+
+        
   </head>
 
-
-
-  
   <body>
 <!-- Start of NavBar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -63,24 +78,107 @@
 <!--------------------------------->
 
 
+<!----------Plot Cards------------->
+<div class="list-group">
+  <a href="comparisons.html" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h3 class="mb-1">Plot Comparisons</h3>
+
+    </div>
+    <h4 class="mb-1">Latitude vs. X</h4>
+    
+  </a>
 
 
+</br>
+</br>
+</br>  
+</br>
+<center>
+  <div class = "container">
+
+    <div class = "row">
+      <div class = "col-6">
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+      <h3 class="card-title"><u>Max Temperature</u></h3>
+      <!-- <div class="card-header">Vs. Max Temperature</div> -->
+      <div class="card-body">
+
+        <a href= "maxtemp.html">" 
+      <img src="assets/images/Fig1.png" title= "Vs. Max Temperature" alt= "Max Temperature" width= "500" height= "400">
+      </a>
+
+        <!-- <h2 class="card-title">Vs. Max Temperature</h2> -->
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      </div>
+    </div>
+    </div> <!--Col-6 1 end-->
 
 
-    </ul>
-  <!--------------------------------->
+    <div class = "col-6">
+
+      <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+        <h3 class="card-title"><u>Humidity</u></h3>
+        <!-- <div class="card-header">Vs. Max Temperature</div> -->
+        <div class="card-body">
   
+          <a href= "humidity.html">" 
+        <img src="assets/images/Fig2.png" title= "Vs. Humidity" alt= "Humidity" width= "500" height= "400">
+        </a>
+  
+          <!-- <h2 class="card-title">Vs. Max Temperature</h2> -->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+      </div>
+      </div> <!--Col-6 2 end-->
+
+    </div> <!--Row 1 end-->
 
 
-  <!-- Place dropdown list here, secondaryNav-->
+
+    <div class = "row">
+      <div class = "col-6">
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+      <h3 class="card-title"><u>Cloudiness</u></h3>
+      <!-- <div class="card-header">Vs. Max Temperature</div> -->
+      <div class="card-body">
+
+        <a href= "cloudiness.html">" 
+      <img src="assets/images/Fig3.png" title= "Vs. Cloudiness" alt= "Cloudiness" width= "500" height= "400">
+      </a>
+
+        <!-- <h2 class="card-title">Vs. Max Temperature</h2> -->
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      </div>
+    </div>
+    </div> <!--Col-6 1 end-->
+
+
+    <div class = "col-6">
+
+      <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+        <h3 class="card-title"><u>Wind Speed</u></h3>
+        <!-- <div class="card-header">Vs. Max Temperature</div> -->
+        <div class="card-body">
+  
+          <a href= "windspeed.html">" 
+        <img src="assets/images/Fig4.png" title= "Vs. Wind Speed" alt= "Wind Speed" width= "500" height= "400">
+        </a>
+  
+          <!-- <h2 class="card-title">Vs. Max Temperature</h2> -->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+      </div>
+      </div> <!--Col-6 2 end-->
+
+    </div> <!--Row 2 end-->
 
 
 
-
-  <p>Welcome to my site!</p>
-
-
-
+  </div> <!--container end-->
+</center>
 
 
   <!--Place bootstrap codes here:-->
